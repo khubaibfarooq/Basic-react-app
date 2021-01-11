@@ -40,4 +40,4 @@ jobs:
       - name: install surge
         run: npm install --global surge
       - name: deploy surge
-        run: surge ./build khubaib-basic-react-app.surge.sh --${{secrets.SURGE_TOKEN}}
+        run: surge ./build khubaib-basic-react-app.surge.sh ${{ secrets.SURGE_TOKEN }}
